@@ -1,0 +1,60 @@
+.portfolio section {
+  display: none;
+}
+
+.portfolio section.active {
+  margin: 100px 10%;
+
+  max-width: 1000px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.portfolio a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.portfolio .group {
+  margin-left: 100px;
+  padding: 16px;
+
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.portfolio .group img {
+  width: 384px;
+  height: auto;
+  border-radius: 16px;
+}
+
+.portfolio .group h2 {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.portfolio .group p {
+  margin-top: 10px;
+}
+
+.portfolio .group .descrip {
+  white-space: pre-line;
+  color: #ffffff;
+}
+
+.portfolio .group .hashtag {
+  color: #0fafff;
+}

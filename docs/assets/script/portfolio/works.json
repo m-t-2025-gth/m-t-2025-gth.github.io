@@ -1,0 +1,97 @@
+{
+    "at11c": {
+        "grab-n-shooter-unity": {
+            "image": [
+                "../../assets/image/at11c/grab-n-shooter.png",
+                "../../assets/image/at11c/seirei-no-kibou.png",
+                "../../assets/image/at11c/seirei-no-kibou.png"
+            ],
+            "youtube": "https://www.youtube.com/embed/GH-gopihSm0",
+            "title": "Grab'n'Shooter (Unity)",
+            "shortdesc": "ちょっとした説明",
+            "hashtags": "#個人製作 #2D #Unity #HAL三校コンペ意欲賞",
+            "tags": "2Dシューティング / 個人製作 / Unity",
+            "award": "🔥2025.10 HAL三校合同学内コンテスト 意欲賞",
+            "description": "個人製作です",
+            "comment": "コメントです",
+            "good": "工夫したところ",
+            "bad": "反省するところ"
+        },
+        "seirei-no-kibou-to-watashi": {
+            "image": [
+                "../../assets/image/at11c/seirei-no-kibou.png",
+                "../../assets/image/at11c/seirei-no-kibou.png",
+                "../../assets/image/at11c/seirei-no-kibou.png"
+            ],
+            "youtube": "https://www.youtube.com/embed/GH-gopihSm0",
+            "title": "精霊の希望と私",
+            "shortdesc": "ちょっとした説明",
+            "hashtags": "#個人製作 #3D #Unity #HAL三校コンペ技術力賞",
+            "tags": "3Dアクションゲーム / 個人製作 / Unity",
+            "award": "⚙️HAL三校合同学内コンテスト 技術力賞",
+            "description": "キャラクターを操作して、雫を集めるゲームです。\nソロプレイゲームです",
+            "comment": "この作品を作るにあたって、マリオギャラクシーたのしーーー",
+            "good": "曲が変化する際に、左下にアニメーションを入れたり、葉っぱに乗ると葉っぱが揺れるといった、細かい演出に工夫しました",
+            "bad": "もう少し開発すればよかった。どうせ1分30秒しか見られないならこれ以上作成するのは無駄だなと思って、提出期限に10日以上前には開発を終えました。"
+        },
+        "grab-n-shooter-conioex": {
+            "image": [
+                "../../assets/image/at11c/grab-n-shooter.png",
+                "../../assets/image/at11c/seirei-no-kibou.png",
+                "../../assets/image/at11c/seirei-no-kibou.png"
+            ],
+            "youtube": "https://www.youtube.com/embed/GH-gopihSm0",
+            "title": "Grab'n'Shooter (C++)",
+            "shortdesc": "ちょっとした説明",
+            "hashtags": "#個人製作 #2D #C++ #HEW2026技術力賞",
+            "tags": "2Dシューティング / 個人製作 / C++",
+            "award": "⚙️HAL EVENT WEEK 技術力賞",
+            "description": "個人製作です",
+            "comment": "コメントです",
+            "good": "工夫したところ",
+            "bad": "反省するところ"
+        },
+        "wanwan-kerutorio": {
+            "image": [
+                "../../assets/image/at11c/jam-wanwan-kerutorio.png",
+                "../../assets/image/at11c/seirei-no-kibou.png",
+                "../../assets/image/at11c/seirei-no-kibou.png"
+            ],
+            "youtube": "https://www.youtube.com/embed/GH-gopihSm0",
+            "title": "わんわんケルトリオ",
+            "shortdesc": "2025/09に開催した 株式会社MARVELOUS 主催の学内GameJamで作成した作品です",
+            "hashtags": "#チーム制作 #2D #Unity #GameJam #ケルベロス",
+            "tags": "2Dシューティング",
+            "award": "なし",
+            "description": "個人製作です",
+            "comment": "コメントです",
+            "good": "工夫したところ",
+            "bad": "反省するところ"
+        },
+        "gamejam-win-ww": {
+            "image": [
+                "../../assets/image/at11c/jam-gamejam-win-www.png",
+                "../../assets/image/at11c/seirei-no-kibou.png",
+                "../../assets/image/at11c/seirei-no-kibou.png"
+            ],
+            "youtube": "https://www.youtube.com/embed/GH-gopihSm0",
+            "title": "GameJAM優勝したったww",
+            "shortdesc": "2026/03に開催した 株式会社CyberAgent 主催の\n学内GameJamで作成した作品です",
+            "hashtags": "##チーム制作 #3D #Unity #GameJam #断絶",
+            "tags": "2Dシューティング",
+            "award": "なし",
+            "description": "個人製作です",
+            "comment": "コメントです",
+            "good": "工夫したところ",
+            "bad": "反省するところ"
+        }
+    },
+    "at12a": {
+        "comingsoon": {
+            "image": [
+                "../../assets/image/at11c/grab-n-shooter.png"
+            ],
+            "title": "Coming soon..."
+        }
+    }
+}

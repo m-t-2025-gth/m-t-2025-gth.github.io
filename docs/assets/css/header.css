@@ -1,0 +1,26 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-left: 200px;
+
+  background-color: #252525;
+  border-right: 2px solid #3c3c3c;
+
+  font-size: 40px;
+}
+
+.header img {
+  position: relative;
+  top: 2px;
+  left: 10px;
+
+  width: 30px;
+  height: auto;
+}
+
+.header a {
+  margin-right: 10px;
+  color: #cccccc;
+  text-decoration: none;
+}
