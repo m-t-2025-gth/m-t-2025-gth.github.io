@@ -8,11 +8,11 @@
             ],
             "youtube": "https://www.youtube.com/embed/GH-gopihSm0",
             "title": "Grab'n'Shooter (Unity)",
-            "shortdesc": "ちょっとした説明",
+            "shortdesc": "夏の三校で作ったゲームです。Visual Scriptでの作成だったため地獄でした。",
             "hashtags": "#個人製作 #2D #Unity #HAL三校コンペ意欲賞",
             "tags": "2Dシューティング / 個人製作 / Unity",
             "award": "🔥2025.10 HAL三校合同学内コンテスト 意欲賞",
-            "description": "個人製作です",
+            "description": "プレイヤーのマウス裁きによって、クリアまでの難易度が大幅に変わる、超マウス操作のシューティングゲームです。\n設定したステージをコンプリートしたら。。。？",
             "comment": "コメントです",
             "good": "工夫したところ",
             "bad": "反省するところ"
@@ -25,14 +25,14 @@
             ],
             "youtube": "https://www.youtube.com/embed/GH-gopihSm0",
             "title": "精霊の希望と私",
-            "shortdesc": "ちょっとした説明",
+            "shortdesc": "冬の三校で作ったゲームです。レギュレーションがとても緩かったです。",
             "hashtags": "#個人製作 #3D #Unity #HAL三校コンペ技術力賞",
             "tags": "3Dアクションゲーム / 個人製作 / Unity",
             "award": "⚙️HAL三校合同学内コンテスト 技術力賞",
-            "description": "キャラクターを操作して、雫を集めるゲームです。\nソロプレイゲームです",
-            "comment": "この作品を作るにあたって、マリオギャラクシーたのしーーー",
-            "good": "曲が変化する際に、左下にアニメーションを入れたり、葉っぱに乗ると葉っぱが揺れるといった、細かい演出に工夫しました",
-            "bad": "もう少し開発すればよかった。どうせ1分30秒しか見られないならこれ以上作成するのは無駄だなと思って、提出期限に10日以上前には開発を終えました。"
+            "description": "コンセプト\n小さいころ、マリオサンシャインや、マリオギャラクシー2を何度もプレイし、その時の体験が強く残っていました。\n今回のこのゲームでは、それら作品の影響を受けつつも続編というわけではなく、水を使って雫を集める、ギミックを解くゲームを制作しました。また、今回は1分30秒程度という指定があったので、ゲームのボリューム感を、その時間内で伝わるように作成しています。\n",
+            "comment": "いつかもっと技術力がついたら、この作品を完成させたいと思っています。2年、3年、それ以降でもいいので、必ず完成させたいです。",
+            "good": "細かいアニメーションの演出に工夫を入れました。葉っぱに触れたときに揺れたり、ゲーム内の曲が変わる瞬間に、情報(名前)の表示を行い、曲の変化をわかりやすくしています。また、アイテム獲得時や、Sceneチェンジの際にムービーを挟むことで、達成感や演出面の印象を強くしました。",
+            "bad": "せっかく技術力賞がもらえたが、提出の10日ほど前にすでに開発を終了させました。1分30秒以上作成しても、紹介動画に入れれないなら、作る必要ないのでは。と思い、開発をやめてしまいました。もう少し開発していれば色付き賞もあったのでは。と後悔しています。"
         },
         "grab-n-shooter-conioex": {
             "image": [
@@ -42,7 +42,7 @@
             ],
             "youtube": "https://www.youtube.com/embed/GH-gopihSm0",
             "title": "Grab'n'Shooter (C++)",
-            "shortdesc": "ちょっとした説明",
+            "shortdesc": "HEWで作ったゲームです。夏の三校のC++版を作ろうって思って作成しました。",
             "hashtags": "#個人製作 #2D #C++ #HEW2026技術力賞",
             "tags": "2Dシューティング / 個人製作 / C++",
             "award": "⚙️HAL EVENT WEEK 技術力賞",
@@ -59,7 +59,7 @@
             ],
             "youtube": "https://www.youtube.com/embed/GH-gopihSm0",
             "title": "わんわんケルトリオ",
-            "shortdesc": "2025/09に開催した 株式会社MARVELOUS 主催の学内GameJamで作成した作品です",
+            "shortdesc": "2025/09に開催した 株式会社MARVELOUS 主催の学内GameJamで作成した作品です。",
             "hashtags": "#チーム制作 #2D #Unity #GameJam #ケルベロス",
             "tags": "2Dシューティング",
             "award": "なし",
@@ -76,7 +76,7 @@
             ],
             "youtube": "https://www.youtube.com/embed/GH-gopihSm0",
             "title": "GameJAM優勝したったww",
-            "shortdesc": "2026/03に開催した 株式会社CyberAgent 主催の\n学内GameJamで作成した作品です",
+            "shortdesc": "2026/03に開催した 株式会社CyberAgent 主催の\n学内GameJamで作成した作品です。",
             "hashtags": "##チーム制作 #3D #Unity #GameJam #断絶",
             "tags": "2Dシューティング",
             "award": "なし",
@@ -86,7 +86,7 @@
             "bad": "反省するところ"
         }
     },
-    "at12a": {
+    "at12c": {
         "comingsoon": {
             "image": [
                 "../../assets/image/at11c/grab-n-shooter.png"

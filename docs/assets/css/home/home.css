@@ -57,3 +57,31 @@
     border-color: transparent;
   }
 }
+
+@media (max-width: 1200px) {
+  .home {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "SN Pro", sans-serif;
+    font-size: 30px;
+  }
+
+  .home .typing {
+    width: auto;
+    max-width: 90vw;
+  }
+
+  .footer {
+    display: none;
+  }
+}

@@ -1,4 +1,18 @@
 const body = document.getElementById("body");
+
+// ===== ハンバーガーチェックボックス作成 =====
+const checkbox = document.createElement("input");
+checkbox.type = "checkbox";
+checkbox.id = "menu-toggle";
+checkbox.className = "menu-toggle";
+
+// ===== ハンバーガーラベル作成 =====
+const label = document.createElement("label");
+label.setAttribute("for", "menu-toggle");
+label.className = "hamburger";
+label.innerHTML = `<span></span><span></span><span></span>`;
+
+// ===== サイドバー作成 =====
 const aside = document.createElement("aside");
 aside.className = "aside";
 aside.innerHTML = `
@@ -15,4 +29,7 @@ aside.innerHTML = `
   </div>
 `;
 
+// ===== bodyに挿入 =====
 body.insertBefore(aside, body.firstChild);
+body.insertBefore(label, body.firstChild);
+body.insertBefore(checkbox, body.firstChild);

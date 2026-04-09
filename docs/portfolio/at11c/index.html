@@ -13,13 +13,29 @@
 
     <!-- CSS Main Loading -->
     <link rel="stylesheet" href="../../assets/css/style.css" />
-    <link rel="stylesheet" href="../../assets/css/aside.css" />
+
     <link rel="stylesheet" href="../../assets/css/header.css" />
     <!-- link rel="stylesheet" href="../../assets/css/footer.css" -->
+
+    <link
+      rel="stylesheet"
+      href="../../assets/css/aside.css"
+      media="screen and (min-width: 1201px)"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/css/aside-hamburger.css"
+      media="screen and (max-width: 1200px)"
+    />
 
     <!-- CSS This Loading -->
     <link rel="stylesheet" href="../../assets/css//portfolio/header.css" />
     <link rel="stylesheet" href="../../assets/css//portfolio/works.css" />
+
+    <link
+      rel="stylesheet"
+      href="../../assets/css/portfolio/works-by-1500px.css"
+    />
 
     <!-- Font Loading -->
     <link
@@ -28,6 +44,16 @@
     />
   </head>
   <body>
+    <!-- サイドバー -->
+    <!-- ハンバーガーメニュー用チェックボックス -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
     <!-- サイドバー -->
     <aside class="aside">
       <div class="logo">Logo</div>
@@ -39,7 +65,6 @@
       </nav>
       <div class="aside-footer">
         <a href="/" class="menu-item">ICON</a>
-
         <h2>©</h2>
       </div>
     </aside>
@@ -68,9 +93,21 @@
             allowfullscreen
           >
           </iframe>
-          <img src="../../assets/image/at11c/grab-n-shooter.png" alt="thumb" />
-          <img src="../../assets/image/at11c/grab-n-shooter.png" alt="thumb" />
-          <img src="../../assets/image/at11c/grab-n-shooter.png" alt="thumb" />
+          <img
+            src="../../assets/image/at11c/grab-n-shooter.png"
+            alt="thumb"
+            class="no1"
+          />
+          <img
+            src="../../assets/image/at11c/grab-n-shooter.png"
+            alt="thumb"
+            id="no2"
+          />
+          <img
+            src="../../assets/image/at11c/grab-n-shooter.png"
+            alt="thumb"
+            id="no3"
+          />
         </div>
         <div class="right">
           <h1>ゲームタイトル</h1>

@@ -4,6 +4,7 @@
 
 .portfolio section.active {
   margin: 100px 10%;
+  margin-left: 200px;
 
   max-width: 1000px;
   opacity: 0;
@@ -28,7 +29,7 @@
 }
 
 .portfolio .group {
-  margin-left: 100px;
+  margin-left: calc((100vw - 1500px) * (100 / 420));
   padding: 16px;
 
   border-radius: 8px;

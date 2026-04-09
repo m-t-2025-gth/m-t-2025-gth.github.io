@@ -9,6 +9,14 @@
   font-size: 40px;
 }
 
+@media (max-width: 1200px) {
+  .header-portfolio {
+    max-width: 100%;
+    margin-left: 0px;
+    font-size: 30px;
+  }
+}
+
 .header-portfolio .text {
   display: flex;
   align-items: center;
