@@ -1,0 +1,48 @@
+.header-portfolio {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-left: 200px;
+  z-index: 9999; /* ← これが重要 */
+  background-color: #252525;
+
+  font-size: 40px;
+}
+
+@media (max-width: 1200px) {
+  .header-portfolio {
+    max-width: 100%;
+    margin-left: 0px;
+    font-size: 30px;
+  }
+}
+
+.header-portfolio .text {
+  display: flex;
+  align-items: center;
+}
+
+.header-portfolio a {
+  border-right: 2px solid #3c3c3c;
+  padding: 8px 16px;
+  margin: 0;
+}
+
+.header-portfolio a:last-child {
+  border-right: none;
+}
+
+.header-portfolio .header-item {
+  color: #aaa;
+  text-decoration: none;
+  padding: 0px 12px;
+  transition: 0.2s;
+}
+
+.header-portfolio .header-item.active {
+  color: #fff;
+}
+
+.header-portfolio .header-item:hover {
+  color: #ddd;
+}

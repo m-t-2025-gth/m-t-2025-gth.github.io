@@ -1,0 +1,151 @@
+.home {
+  font-family: "SN Pro", sans-serif;
+  font-size: 80px;
+  height: 85vh;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.scroll-anim {
+  position: absolute;
+  bottom: 30px;
+  font-size: 22px;
+  color: #555;
+
+  animation: bounce 1.5s infinite;
+}
+
+/* アニメーション */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+}
+
+/* ここからセクション */
+.section-color {
+  background: #e0e0e0;
+}
+
+.section {
+  font-family: "SN Pro", sans-serif;
+  color: #000000;
+}
+
+#profile {
+  padding-top: 50px;
+}
+
+#profile h4 {
+  text-align: center;
+  font-size: 20px;
+}
+
+#profile h2 {
+  text-align: center;
+  font-size: 100px;
+}
+
+#profile h3 {
+  text-align: center;
+  font-size: 60px;
+}
+
+#profile img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+
+  display: block;
+  margin: 0 auto;
+}
+
+#profile p {
+  font-size: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#portfolio {
+  padding-top: 100px;
+}
+
+#portfolio h4 {
+  text-align: center;
+  font-size: 20px;
+}
+
+#portfolio h2 {
+  text-align: center;
+  font-size: 100px;
+}
+
+#portfolio h3 {
+  text-align: center;
+  font-size: 60px;
+}
+
+#portfolio .box-portfolio {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+
+  background: #eeeeee;
+  border-radius: 20px;
+}
+
+#portfolio .box-portfolio .at11c-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+#portfolio .box-portfolio .at11c-link:hover .at11c {
+  border-color: #00aaff;
+  background: #f0f8ff;
+}
+
+#portfolio .box-portfolio h2 {
+  margin: 0 auto;
+  text-align: left;
+  font-size: 30px;
+}
+
+#portfolio .box-portfolio h3 {
+  margin: 0 auto;
+  text-align: left;
+  font-size: 20px;
+}
+
+#portfolio .box-portfolio .at11c {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+
+  background: none; /* ← 背景消す */
+  border: 2px solid #dddddd; /* ← 枠線だけ */
+  border-radius: 10px;
+}
+
+#portfolio .box-portfolio .at11c img {
+  max-width: 200px;
+  margin-right: 10px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #dddddd; /* ← ここが枠線 */
+  object-fit: cover;
+  transition: transform 0.3s;
+}
