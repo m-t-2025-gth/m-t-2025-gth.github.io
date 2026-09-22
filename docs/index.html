@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Init Loading -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/navbar.css" />
+    <link rel="stylesheet" href="/assets/css/first-view.css" />
+    <link rel="stylesheet" href="/assets/css/section.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+
+    <!-- profile -->
+    <link rel="stylesheet" href="/assets/css/profile/profile.css" />
+    <link rel="stylesheet" href="/assets/css/profile/sns.css" />
+
+    <!-- portfolio -->
+    <link rel="stylesheet" href="/assets/css/portfolio/portfolio.css" />
+
+    <!-- fonts-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!--ナビゲーション-->
+      <nav class="navbar">
+        <a href="#top">TOP</a>
+        <a href="#profile">PROFILE</a>
+        <a href="#portfolio">PORTFOLIO</a>
+        <!--<a href="#contact">CONTACT</a> -->
+      </nav>
+    </header>
+
+    <section id="top" class="first-view">
+      <!-- 左 -->
+      <div class="side-text left-text">MTEE</div>
+
+      <!-- 3Dモデル -->
+      <div id="model-container"></div>
+
+      <!-- 右 -->
+      <div class="side-text right-text">MTEE</div>
+
+      <!-- SCROLL -->
+      <div class="scroll">↓ SCROLL ↓</div>
+    </section>
+
+    <section id="profile" class="content-section">
+      <h2>PROFILE</h2>
+
+      <div class="profile-content">
+        <!-- 左：アイコン -->
+        <div class="profile-icon">
+          <img src="/assets/images/mtee_logo.png" alt="プロフィール画像" />
+          <h3>M TEE</h3>
+          <p>m-t-2025-gth</p>
+
+          <!-- SNSアイコン -->
+          <div class="sns-icons">
+            <a
+              href="https://twitter.com/m_t_2025_gth"
+              target="_blank"
+              class="sns-icon twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a
+              href="https://github.com/m-t-2025-gth"
+              target="_blank"
+              class="sns-icon github"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="https://discord.com/users/1359046835087610068"
+              target="_blank"
+              class="sns-icon discord"
+            >
+              <i class="fab fa-discord"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 右：プロフィール -->
+        <div class="profile-text">
+          <h3>👋 Hi! I'm M Tee</h3>
+
+          <p>大阪生まれ、大阪育ちの生粋の大阪人です！</p>
+          <p>
+            HAL大阪在学中のATクラス。専攻はプログラマーで、志望もプログラマーです。
+          </p>
+          <p>
+            世代ではないニンテンドーゲームキューブで育ち、マリオサンシャインでゲームの世界を知りました。
+          </p>
+
+          <div class="profile-info">
+            <div class="award">
+              <h4>Awards</h4>
+              <div id="award-list"></div>
+            </div>
+
+            <div class="achie">
+              <h4>Achievements</h4>
+              <div id="achiev-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="content-section">
+      <h2>PORTFOLIO</h2>
+
+      <p>制作した作品をここに掲載しています。</p>
+
+      <div id="portfolio-list"></div>
+    </section>
+
+    <footer class="footer">
+      <nav class="footer-nav">
+        <a href="/">TOP</a>
+        <a href="/#profile">PROFILE</a>
+        <a href="/#portfolio">PORTFOLIO</a>
+        <a href="/hope">HOPE <= ??</a>
+      </nav>
+
+      <p class="footer-copy">© 2026 M Tee. All Rights Reserved.</p>
+    </footer>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <script src="/assets/scripts/award-achiev.js"></script>
+    <script src="/assets/scripts/gamePreview.js"></script>
+    <script type="module" src="/assets/scripts/scroll.js"></script>
+    <script type="module" src="/assets/scripts/glbLoader.js"></script>
+  </body>
+</html>

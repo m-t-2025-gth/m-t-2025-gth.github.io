@@ -1,0 +1,22 @@
+.content-section {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 100px 10%;
+
+  scroll-margin-top: 80px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: center;
+
+  text-align: center;
+}
+
+.content-section h2 {
+  margin-bottom: 30px;
+
+  font-size: 50px;
+}

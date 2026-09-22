@@ -1,0 +1,103 @@
+{
+  "AT11C": [
+    {
+      "title": "Grab'n'Shooter (Unity)",
+      "image": "/assets/images/at11c/grab-n-shooter.png",
+      "video": "https://www.youtube.com/embed/u6uL54g4SOU",
+      "description": "マウスをドラッグ操作して、敵を倒すシューティングゲームです。",
+      "tags": ["個人製作", "2D", "Unity", "課題制作"],
+      "award": ["🔥2025.10 HAL三校合同學内コンテスト 意欲賞"],
+      "comment": "初めてのゲーム制作であり、かつUnity 6のVisual Scriptで作成した作品です。\nとても苦労しましたが、Unityの基本的な操作やゲーム制作の流れを学ぶことができました。\nまた、HAL三校合同學内コンテストにて意欲賞を受賞することができ、とてもうれしかったです。",
+      "good": "あ",
+      "bad": "プレイヤー操作に問題があり、マウスを早く動かしてしまうとプレイヤーが動かなくなってしまうことがあります。",
+      "url": "/games/?type=at11c&id=0"
+    },
+    {
+      "title": "精霊の希望と私",
+      "image": "/assets/images/at11c/seirei-no-kibou.png",
+      "video": "https://www.youtube.com/embed/aFJNjAfoVXM",
+      "description": "キャラクターを操作して、雫を集める3Dゲームです。",
+      "tags": ["個人製作", "3D", "Unity", "課題制作"],
+      "award": ["⚙️2026.03 HAL三校合同学内コンテスト 技術力賞"],
+      "comment": "コメントです",
+      "good": "曲が変化する際に、左下にアニメーションを入れたり、葉っぱに乗ると葉っぱが揺れるといった、細かい演出に工夫しました",
+      "bad": "もう少し開発すればよかった。どうせ1分30秒しか見られないならこれ以上作成するのは無駄だなと思って、提出期限に10日以上前には開発を終えました。",
+      "url": "/games/?type=at11c&id=1"
+    },
+    {
+      "title": "Grab'n'Shooter (C++)",
+      "image": "/assets/images/at11c/grab-n-shooter.png",
+      "video": "https://www.youtube.com/embed/1xUq-QAB2vo",
+      "description": "マウスをドラッグ操作して、敵を倒すシューティングゲームです。",
+      "tags": ["個人製作", "2D", "C++", "課題制作"],
+      "award": ["⚙️2026.03 HAL EVENT WEEK 技術力賞"],
+      "comment": "せっかくC++でゲームを作るなら、Unity版よりも高い完成度を目指したいと思い、Unity版のGrab'n'ShooterをC++で再現しました。\nUnity版ではVisual Scriptで作成していたため、C++で作る際に苦労しましたが、無事に完成させることができました。",
+      "good": "Unity版よりも高い完成度を目指して、敵の種類を増やしたり、UIを改善したり、ゲームバランスを調整したりしました。また、試遊の機会があったので、ランキング要素も付け足しました。",
+      "bad": "草案を考えることを怠ってしまったため、Unity版のGrab'n'ShooterをC++で再現することしか考えられませんでした。",
+      "url": "/games/?type=at11c&id=2"
+    },
+    {
+      "title": "わんわんケルトリオ",
+      "image": "/assets/images/gamejam/wanwan-kerutorio.png",
+      "video": "https://www.youtube.com/embed/osBXt3mwDXs",
+      "description": "犬さん三匹をケルベロスに合体！ケルベロスになってゴールを目指すゲームです。",
+      "tags": ["チーム制作", "2D", "Unity", "GameJam"],
+      "award": ["なし"],
+      "comment": "初めてのチーム制作であり、そしてまだUnityを使い始めて間もない時期に作った作品です。\nチーム制作の難しさを学ぶことができました。",
+      "good": "とにかく完成させることを目標に、みんなで製作しました。GameJamということもあり、期間は3日でした。",
+      "bad": "とにかく完成させることを目標にしていたため、ケルベロスである意味があるのか、三匹分ける必要があるのか。。と、根本が作れていませんでした。",
+      "url": "/games/?type=at11c&id=3"
+    },
+    {
+      "title": "GameJAM優勝したったww",
+      "image": "/assets/images/gamejam/gamejam-win-www.png",
+      "video": "https://www.youtube.com/embed/877VMIpiDzw",
+      "description": "周りのチームのPCを破壊しましょう！ライバルが消えたら実質優勝？",
+      "tags": ["チーム制作", "3D", "Unity", "GameJam"],
+      "award": ["なし"],
+      "comment": "なぜこの案が通ったのか今でもわかりません。\n身内ネタゲームになってしまったが、とても楽しく開発できて今でもいい思い出です。",
+      "good": "細かい仕様ですが、同じObject(コップなど)が置かれている区切りでチーム1つとして扱われています。",
+      "bad": "反省するところ",
+      "url": "/games/?type=at11c&id=4"
+    }
+  ],
+
+  "AT12C": [
+    {
+      "title": "TESTBOUND",
+      "image": "/assets/images/at12c/testbound.png",
+      "video": "https://www.youtube.com/embed/54aRX-aHcFw",
+      "description": "ポータルを駆使してゴールを目指す2Dパズルアクションゲームです。",
+      "tags": ["個人製作", "2D", "C++", "課題制作"],
+      "award": ["なし"],
+      "comment": "とにかく苦労に苦労を重ねました。\nとてもゲームエンジンに頼りたい気持ちが強かったです。",
+      "good": "工夫したところ",
+      "bad": "反省するところ",
+      "url": "/games/?type=at12c&id=0"
+    },
+    {
+      "title": "ぷよぷよ？",
+      "image": "/assets/images/at12c/puyopuyo.png",
+      "video": "https://www.youtube.com/embed/5QO5NRrnfLw",
+      "description": "ぷよぷよ？です。",
+      "tags": ["個人製作", "2D", "C++", "課題制作"],
+      "award": ["課題制作なため、賞歴はありません。"],
+      "comment": "TESBOUNDと同じ期間中に作成しなければならなかったため、あまり時間をかけられませんでした。\n言い訳になってしまいますが。。。",
+      "good": "工夫したところ",
+      "bad": "反省するところ",
+      "url": "/games/?type=at12c&id=1"
+    },
+    {
+      "title": "MadeInHAL",
+      "image": "/assets/images/gamejam/made-in-hal.png",
+      "video": "https://www.youtube.com/embed/DyRlChAX_Bk",
+      "description": "いくつものミニゲームをクリアして最終ゲームに挑みましょう！",
+      "tags": ["チーム制作", "3D", "Unity", "GameJam"],
+      "award": ["なし"],
+      "comment": "悲しいと悔しい思い出しかないです。\nまぁ結果がどうであれ、チーム/ゲーム制作はとても楽しかったです。",
+      "good": "できる限りミニゲームは10秒以内に収めるという制約を設けて、短時間で楽しめるように工夫しました。",
+      "bad": "もう少しミニゲームの種類を増やしたり、同じミニゲームは出にくいようにするべきでした。",
+      "url": "/games/?type=at12c&id=2"
+    }
+  ]
+}

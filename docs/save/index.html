@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+         ナビゲーション
+    ========================== -->
+
+    <nav class="navbar">
+      <a href="#top">TOP</a>
+      <a href="#profile">PROFILE</a>
+      <a href="#portfolio">PORTFOLIO</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+    <!-- =========================
+         TOP
+    ========================== -->
+
+    <section id="top" class="first-view">
+      <!-- 左 -->
+      <div class="side-text left-text">EETM</div>
+
+      <!-- 3Dモデル -->
+      <div id="model-container"></div>
+
+      <!-- 右 -->
+      <div class="side-text right-text">MTEE</div>
+
+      <!-- SCROLL -->
+      <div class="scroll">↓ SCROLL ↓</div>
+    </section>
+    <!-- =========================
+         PROFILE
+    ========================== -->
+
+    <section id="profile" class="content-section">
+      <h2>PROFILE</h2>
+
+      <p>プロフィールの内容です。</p>
+    </section>
+
+    <!-- =========================
+         PORTFOLIO
+    ========================== -->
+
+    <section id="portfolio" class="content-section">
+      <h2>PORTFOLIO</h2>
+
+      <p>制作した作品をここに掲載します。</p>
+    </section>
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact" class="content-section">
+      <h2>CONTACT</h2>
+
+      <p>お問い合わせはこちら。</p>
+    </section>
+
+    <!-- Three.js -->
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <script type="module" src="script.js" delay></script>
+    <script src="scroll.js" delay></script>
+  </body>
+</html>

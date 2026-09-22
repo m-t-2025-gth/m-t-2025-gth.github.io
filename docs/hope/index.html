@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hope</title>
+
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #222222;
+        color: #ffffff;
+
+        font-family: Arial, sans-serif;
+
+        line-height: 1.8;
+
+        transition:
+          background-color 0.3s ease,
+          color 0.3s ease;
+      }
+
+      /* =========================
+     モード切り替えボタン
+  ========================= */
+
+      .theme-toggle {
+        position: fixed;
+
+        top: 20px;
+        right: 20px;
+
+        z-index: 1000;
+
+        width: 50px;
+        height: 50px;
+
+        border: none;
+        border-radius: 50%;
+
+        background-color: #ffffff;
+        color: #222222;
+
+        font-size: 22px;
+
+        cursor: pointer;
+
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+        transition:
+          background-color 0.3s ease,
+          color 0.3s ease,
+          transform 0.2s ease;
+      }
+
+      .theme-toggle:hover {
+        transform: scale(1.1);
+      }
+
+      /* =========================
+     Markdown
+  ========================= */
+
+      .markdown {
+        width: 100%;
+        max-width: 900px;
+
+        margin: 0 auto;
+
+        padding: 80px 30px;
+      }
+
+      .markdown h1 {
+        margin-bottom: 30px;
+
+        font-size: 42px;
+
+        border-bottom: 2px solid currentColor;
+
+        padding-bottom: 10px;
+      }
+
+      .markdown h2 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+
+        font-size: 30px;
+      }
+
+      .markdown h3 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+
+        font-size: 22px;
+      }
+
+      .markdown p {
+        margin-bottom: 20px;
+      }
+
+      .markdown ul,
+      .markdown ol {
+        margin-bottom: 20px;
+
+        padding-left: 30px;
+      }
+
+      .markdown code {
+        padding: 2px 6px;
+
+        background-color: #eeeeee;
+        color: #222222;
+
+        border-radius: 4px;
+      }
+
+      .markdown pre {
+        margin-bottom: 20px;
+
+        padding: 20px;
+
+        overflow-x: auto;
+
+        background-color: #111111;
+        color: #ffffff;
+
+        border-radius: 10px;
+      }
+
+      .markdown pre code {
+        padding: 0;
+
+        background: none;
+        color: inherit;
+      }
+
+      .markdown blockquote {
+        margin: 20px 0;
+
+        padding: 10px 20px;
+
+        border-left: 4px solid currentColor;
+
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .markdown a {
+        color: #66aaff;
+      }
+
+      .markdown img {
+        display: block;
+
+        max-width: 100%;
+
+        height: auto;
+
+        margin: 20px 0;
+
+        border-radius: 10px;
+      }
+
+      /* =========================
+     ホワイトモード
+  ========================= */
+
+      body.light-mode {
+        background-color: #ffffff;
+        color: #222222;
+      }
+
+      body.light-mode .theme-toggle {
+        background-color: #222222;
+        color: #ffffff;
+      }
+
+      body.light-mode .markdown code {
+        background-color: #eeeeee;
+        color: #222222;
+      }
+
+      body.light-mode .markdown pre {
+        background-color: #222222;
+        color: #ffffff;
+      }
+
+      body.light-mode .markdown blockquote {
+        background-color: #f5f5f5;
+      }
+
+      body.light-mode .markdown a {
+        color: #0066cc;
+      }
+
+      /* =========================
+     スマホ
+  ========================= */
+
+      @media (max-width: 700px) {
+        .markdown {
+          padding: 50px 20px;
+        }
+
+        .markdown h1 {
+          font-size: 32px;
+        }
+
+        .markdown h2 {
+          font-size: 26px;
+        }
+
+        .theme-toggle {
+          top: 15px;
+          right: 15px;
+
+          width: 45px;
+          height: 45px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="theme-toggle" class="theme-toggle">☀</button>
+
+    <main id="markdown" class="markdown">読み込み中...</main>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <script>
+      const themeToggle = document.getElementById("theme-toggle");
+
+      let currentTheme = localStorage.getItem("hope-theme") || "dark";
+
+      function updateTheme() {
+        if (currentTheme === "light") {
+          document.body.classList.add("light-mode");
+          themeToggle.textContent = "🌙";
+        } else {
+          document.body.classList.remove("light-mode");
+          themeToggle.textContent = "☀";
+        }
+
+        const hopeText = document.getElementById("hope-text");
+
+        if (hopeText) {
+          if (currentTheme === "light") {
+            hopeText.src = "/assets/images/hope_text_b.png";
+          } else {
+            hopeText.src = "/assets/images/hope_text_w.png";
+          }
+        }
+      }
+
+      fetch("/hope/hope.md")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Markdownファイルを読み込めませんでした。");
+          }
+
+          return response.text();
+        })
+        .then((markdown) => {
+          document.getElementById("markdown").innerHTML =
+            marked.parse(markdown);
+
+          updateTheme();
+        })
+        .catch((error) => {
+          console.error(error);
+
+          document.getElementById("markdown").textContent =
+            "ページを読み込めませんでした。";
+        });
+
+      themeToggle.addEventListener("click", () => {
+        currentTheme = currentTheme === "dark" ? "light" : "dark";
+
+        localStorage.setItem("hope-theme", currentTheme);
+
+        updateTheme();
+      });
+    </script>
+
+    <footer class="footer">
+      <nav class="footer-nav">
+        <a href="/">TOP</a>
+        <a href="/#profile">PROFILE</a>
+        <a href="/#portfolio">PORTFOLIO</a>
+      </nav>
+
+      <p class="footer-copy">© 2026 M Tee. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
