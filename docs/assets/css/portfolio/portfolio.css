@@ -158,6 +158,33 @@
 ========================= */
 
 @media (max-width: 700px) {
+  /* =========================
+     Profile
+  ========================= */
+
+  .profile-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .profile-icon {
+    width: 100%;
+    padding-left: 0;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* =========================
+     Portfolio
+  ========================= */
+
   .portfolio-group h3 {
     font-size: 24px;
     margin-left: 50px;
@@ -170,7 +197,6 @@
   .portfolio-arrow {
     width: 40px;
     height: 40px;
-
     font-size: 18px;
   }
 
