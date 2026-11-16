@@ -185,6 +185,51 @@ fetch("/assets/data/gamePreview.json")
     }
 
     // =========================
+    // Contest
+    // =========================
+
+    const contestContainer = document.getElementById("game-contest");
+
+    const contestSection = document.getElementById("contest-section");
+
+    contestContainer.innerHTML = "";
+
+    if (Array.isArray(game.contest) && game.contest.length > 0) {
+      game.contest.forEach((contestUrl) => {
+        if (!contestUrl) {
+          return;
+        }
+
+        // Game Paradeか判定
+        if (contestUrl.includes("gameparade.creators-guild.com")) {
+          // リンク
+          const contestLink = document.createElement("a");
+
+          contestLink.href = contestUrl;
+          contestLink.target = "_blank";
+          contestLink.rel = "noopener noreferrer";
+
+          contestLink.classList.add("game-contest-link");
+
+          // 画像
+          const contestImage = document.createElement("img");
+
+          contestImage.src = "/assets/images/etc/GameCreatorKoshien.png";
+          contestImage.alt = "GameCreatorKoshien";
+
+          contestLink.appendChild(contestImage);
+
+          contestContainer.appendChild(contestLink);
+        }
+      });
+
+      contestSection.style.display =
+        contestContainer.children.length > 0 ? "" : "none";
+    } else {
+      contestSection.style.display = "none";
+    }
+
+    // =========================
     // ページタイトル
     // =========================
 

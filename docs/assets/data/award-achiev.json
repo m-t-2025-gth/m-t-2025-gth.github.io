@@ -1,6 +1,12 @@
 {
   "awards": [
     {
+      "date": "2026.10",
+      "contest": "HAL三校合同学内コンテスト",
+      "prize": "技術力賞",
+      "url": "/games/?type=at12c&id=0"
+    },
+    {
       "date": "2026.03",
       "contest": "HAL EVENT WEEK",
       "prize": "技術力賞",
